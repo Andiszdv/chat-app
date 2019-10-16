@@ -1,8 +1,10 @@
 import React from "react";
 import Contact from "./Contact";
+
+
 const users = [
   {
-    name: "Charlie Edgar",
+    name: "Anna Edgar",
     image: "https://randomuser.me/api/portraits/women/10.jpg",
     online: false
   },
@@ -17,7 +19,7 @@ const users = [
     online: true
   },
   {
-    name: "Harry Smith",
+    name: "Jenny Smith",
     image: "https://randomuser.me/api/portraits/women/67.jpg",
     online: false
   },
@@ -35,7 +37,7 @@ const ContactList = () => (
         name={user.name}
         image={user.image}
         online={user.online}
-        keys={user.name}
+        key={user.name}
       />
     ))}
   </div>
