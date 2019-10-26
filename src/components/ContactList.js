@@ -25,7 +25,7 @@ const users = [
   },
   {
     name: "Mary Johnson",
-    image: "https://randomuser.me/api/portraits/women/75.jpg",
+    image: "https://randomuser.me/api/portraits/women/71.jpg",
     online: true
   }
 ];
