@@ -1,68 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Read. The. Doc.
+Lis jusqu'au bout avant de te lancer !
 
-## Available Scripts
+L'objectif est de créer un élément React, représentant un contact d'une application de "chat", afin d'obtenir un rendu proche de celui-ci :
 
-In the project directory, you can run:
+Chat Status Dark Pacman
 
-### `npm start`
+Pour venir à bout de ce challenge, tu peux avoir besoin de lire uniquement la section Specifying attributes with JSX.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Elle décrit un autre autre usage des variables en JSX, et une subtilité concernant l'utilisation de classes dans le JSX.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Commence par forker le template fourni ( https://codepen.io/wildcodeschool/pen/mddbzdd?editors=0110. Un élément est fourni, mais contient juste une <div> vide, à laquelle il va falloir ajouter ton contenu.
 
-### `npm test`
+Voici les directives :
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Il faut déclarer trois variables (en const) :
 
-### `npm run build`
+name contenant un nom ou pseudo
+avatar contenant l'URL d'une image (tu peux utiliser ton avatar GitHub, ou autre)
+online, un booléen indiquant si tu es connecté
+Tu dois les utiliser dans le JSX. Pour ce qui est du booléen online, sers-t'en pour afficher le texte Online ou Offline suivant sa valeur.
+Le CSS est fourni ! Tu peux l'examiner et t'en servir dans les éléments que tu ajoutes.
+Tu posteras l'URL du Pen pour valider ta quête.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Critères de validation
+Trois variables sont déclarées
+Elles sont utilisées dans le JSX
+L'affichage du statut change si on change la valeur du booléen online
+Le code est disponible sur CodePen
