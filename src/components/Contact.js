@@ -5,25 +5,25 @@ class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      online: false
+      online: props.online
     };
   }
   render() {
+    const statusAlternation = e => {
+      const status = !this.state.online;
+      this.setState({ online: status });
+    };
     return (
       <div className="Contact">
-        <img className="avatar" src={this.props.image} alt="avatarphoto" />
+        <img className="avatar" src={this.props.image} alt={this.props.name} />
         <div>
           <h4 className="name">{this.props.name}</h4>
-          <div className="status">
+          <div className="status" onClick={statusAlternation}>
             <span
               className={this.state.online ? "status-online" : "status-offline"}
-              onClick={event => {
-                const newOnlinePersone = !this.state.online;
-                this.setState({ online: newOnlinePersone });
-              }}
             ></span>
             <span className="status-text">
-              {this.props.online ? "Online" : "Offline"}
+              {this.state.online ? "Online" : "Offline"}
             </span>
           </div>
         </div>
